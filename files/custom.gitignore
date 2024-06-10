@@ -19,6 +19,7 @@ __pycache__
 .electron-gyp
 .env
 .erlang-hist*
+.expo/
 .hawtjni/
 .helm/**/*.tgz
 .idea*
@@ -52,6 +53,8 @@ __pycache__
 *.sqlite-shm
 *.sqlite-wal
 *.sw[nop]
+*.zwc
+*.zwc.old
 **/Skype/**/media_messaging/
 *db-shm
 *db-wal
@@ -97,6 +100,7 @@ __pycache__
 /.ctsystem
 /.cups/
 /.cvecheck/cvecheck-runtime.properties
+/.dlv/
 /.dmrc
 /.dropbox*
 /.dvdcss
@@ -161,7 +165,9 @@ __pycache__
 /.rvm/
 /.sbt/
 /.scalarDiagnostics/
+/.sdkman/
 /.Skype
+/.sonar/
 /.sonarlint/
 /.ssh/known_hosts
 /.sts4
@@ -176,6 +182,7 @@ __pycache__
 /.thumbnails
 /.tldrc/
 /.tmux
+/.tooling/gradle/checksums/
 /.tooling/gradle/checksums/
 /.tooling/gradle/versions.json
 /.Trash
@@ -209,7 +216,7 @@ __pycache__
 /dev/
 /Documents/
 /Downloads/
-/go/pkg/
+/go
 /Google\ Drive
 /Google\ Drive\ File\ Stream
 /Library/
@@ -218,7 +225,7 @@ __pycache__
 /Music/
 /OWASP-Dependency-Check/data
 /Parallels
-/personal/*/profiles/
+/Personal/*/profiles/
 /Pictures/
 /Public/
 /QuickStart
@@ -255,6 +262,8 @@ tmp/
 /.editorconfig
 /.erdconfig
 /.eslintrc.js
+/.fzf.bash
+/.fzf.zsh
 /.gemrc
 /.gitattributes
 /.gitconfig

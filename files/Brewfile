@@ -36,92 +36,54 @@ brew 'btop'
 brew 'curl'
 brew 'diff-so-fancy'
 brew 'direnv'   # Note: If you get an error (for eg after upgrading direnv or if moving to a different ARM machine), you will need to delete '${HOME}/.zsh-evalcache' folder
-# brew 'dive'   # docker layers inspection on steroids
-# brew 'docker-diff'
-# brew 'docker-slim'  # TODO: investigate if the http-probe is a deal-breaker
-brew 'eza'
-# brew 'fzy'
-# brew 'git-crypt'
 brew 'git-extras'
 brew 'git-gui'
 brew 'git-tools'
 brew 'git'
-# brew 'gradle'
-# brew 'gradle-completion'
-# brew 'hadolint'     # lint Dockerfiles (similar to shellcheck for shell scripts)
 brew 'jq'
-# brew 'kubernetes-cli', link: true   # Note: Had to do this: rm /usr/local/bin/kubectl && brew link --overwrite kubernetes-cli
-# brew 'kubernetes-helm'
 brew 'less'
-# brew 'libressl', link: true
-# brew 'localstack'
-# brew 'make'
 brew 'mise'
 brew 'moreutils'
 brew 'ncdu'
-# brew 'pkgdiff'
 brew 'powerlevel10k'
 brew 'prettyping'
-# brew 'reattach-to-user-namespace' # Needed if using tmux (to be able to access the macos clipboard from within tmux)
 brew 'ripgrep'
 brew 'shellcheck'
-# brew 'speedtest-cli'
+brew 'sonar-scanner'
 brew 'syncthing'
 brew 'tldr'
-# brew 'tmux'
 brew 'vim'
 brew 'watch'
+brew 'watchman'
 brew 'wget'
 brew 'wifi-password'
+brew 'yarn'
 brew 'zsh'
 
 # ----------------------------------------------------------------------------------------------------------
 brew 'mas'
 mas 'iBar-Menubar icon control tool', id: 6443843900
-# mas 'Velja', id: 1607635845
-
 # ----------------------------------------------------------------------------------------------------------
+
 cask 'aldente'
-# cask 'alfred'
-cask 'apparency'
-cask 'appcleaner'
+cask 'android-studio'
 cask 'arc'
-cask 'brave-browser@nightly'
+cask 'bitwarden'
 cask 'clocker'
-cask 'cloudflare-warp'
 cask 'command-x'
-# cask 'dbeaver-community'
-# cask 'dupeguru'
-cask 'firefox@nightly' #, greedy: true
+cask 'dbeaver-community'
+cask 'flycut'
 cask 'font-meslo-lg-nerd-font'
-# cask 'git-credential-manager'  # https://docs.github.com/en/get-started/getting-started-with-git/caching-your-github-credentials-in-git
-# cask 'intellij-idea-ce'
-cask 'iterm2@nightly'
+cask 'google-chrome'
+cask 'intellij-idea-ce'
+cask 'iterm2'
 cask 'itsycal'
-# cask 'kdiff3'
-cask 'keepassxc@beta'
 cask 'keepingyouawake'
 cask 'keybase'
-# cask 'keycastr'
-cask 'libreoffice'
-# cask 'licecap'
-# cask 'lulu'
-# cask 'maccy'  # replaced by raycast on June 22, 2024; to be removed after 1 month of usage
-cask 'monolingual'
-# cask 'netspot'
-# cask 'ngrok'
-cask 'notunes'
-# cask 'onyx'  # Commented out since I'm on the beta version of macos
-cask 'protonvpn'
 cask 'rancher'
-cask 'raycast'
-# cask 'rectangle'  # replaced by raycast on June 22, 2024; to be removed after 1 month of usage
-cask 'silicon' if is_arm
+cask 'rectangle'
 cask 'stats'
-# cask 'tempbox'
-cask 'the-unarchiver'
-cask 'thunderbird@daily'  # TODO: Commented out since I haven't opened TBird for the past 6 months - maybe its time to let go
-cask 'vscodium@insiders'   # TODO: Doesn't handle 'Remote Containers' and GH-based auto-syncing when comparing to VSCode
+cask 'visual-studio-code'
 cask 'zoom'
 
 # VSCode extensions
@@ -169,10 +131,7 @@ if is_vscode_installed
   vscode 'wmaurer.change-case'
   vscode 'xaver.clang-format'
   vscode 'yzhang.markdown-all-in-one'
+  vscode 'zokugun.cron-tasks'
+  vscode 'zokugun.sync-settings'
+  vscode 'shan.code-settings-sync'
 end
-
-# ----------------------------------------------------------------------------------------------------------
-# TODO: This doesn't solve the issue about performing a custom action when a specific formula/cask is (re)installed - keeping for future reference
-# at_exit do
-#   system "echo WOAH!!!!!!! && code-gist"
-# end

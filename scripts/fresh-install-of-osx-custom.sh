@@ -3,16 +3,16 @@
 # Note: This script is specific to my setup and might not be useful for others. This is being shared so as to be used as a reference if you want to mimic the same setup.
 
 # You can run this script using this command:
-# curl -fsSL https://raw.githubusercontent.com/vraravam/dotfiles/master/scripts/fresh-install-of-osx-custom.sh | zsh
+# curl -fsSL https://raw.githubusercontent.com/SathyaRupa/dotfiles/master/scripts/fresh-install-of-osx-custom.sh | zsh
 
 # Note: Change these as per your settings
 USERNAME="${USERNAME:-$(whoami)}"
-KEYBASE_USERNAME="${KEYBASE_USERNAME:-"avijayr"}"
+KEYBASE_USERNAME="${KEYBASE_USERNAME:-"sathyarupa"}"
 KEYBASE_HOME_REPO_NAME="${KEYBASE_HOME_REPO_NAME:-"home"}"
 KEYBASE_PROFILES_REPO_NAME="${KEYBASE_PROFILES_REPO_NAME:-"profiles"}"
-PERSONAL_PROFILES_DIR="${PERSONAL_PROFILES_DIR:-"${HOME}/personal/${USERNAME}/profiles"}"
+PERSONAL_PROFILES_DIR="${PERSONAL_PROFILES_DIR:-"${HOME}/Personal/${USERNAME}/profiles"}"
 PERSONAL_BIN_DIR="${PERSONAL_BIN_DIR:-"${HOME}/.bin"}"
-PERSONAL_CONFIGS_DIR="${PERSONAL_CONFIGS_DIR:-"${HOME}/personal/dev"}"
+PERSONAL_CONFIGS_DIR="${PERSONAL_CONFIGS_DIR:-"${HOME}/Personal/dev"}"
 
 source "${HOME}/.shellrc"
 # Load all zsh config files for PATH and other env vars to take effect
@@ -31,7 +31,7 @@ if [ ! -d "${HOME}/.git" ]; then
   rm -rf "${HOME}/tmp"
 
   # Checkout files (these should not have any modifications/conflicts with what is in the remote repo)
-  git -C "${HOME}" checkout ".[a-zA-Z]*" personal
+  git -C "${HOME}" checkout ".[a-zA-Z]*" Personal
 
   # Reset ssh keys' permissions so that git doesn't complain when using them
   sudo chmod -R 600 "${HOME}"/.ssh/*

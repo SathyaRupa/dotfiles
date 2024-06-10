@@ -22,8 +22,8 @@ export LC_ALL='en_US.UTF-8'
 export LESSCHARSET='utf-8'
 
 export PROJECTS_BASE_DIR="${HOME}/dev"
-export PERSONAL_CONFIGS_DIR="${HOME}/personal/dev"
-export PERSONAL_PROFILES_DIR="${HOME}/personal/${USERNAME}/profiles"
+export PERSONAL_CONFIGS_DIR="${HOME}/Personal/dev"
+export PERSONAL_PROFILES_DIR="${HOME}/Personal/${USERNAME}/profiles"
 export PERSONAL_BIN_DIR="${HOME}/.bin"
 export DOTFILES_DIR="${HOME}/.bin-oss"
 
