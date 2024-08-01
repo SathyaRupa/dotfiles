@@ -15,6 +15,9 @@ test -n "${FIRST_INSTALL+1}" && echo "loading ${0}"
 
 type load_file_if_exists &> /dev/null 2>&1 || source "${HOME}/.shellrc"
 
+export DOCKER_HOST="unix://$HOME/.colima/default/docker.sock"
+export TESTCONTAINERS_DOCKER_SOCKET_OVERRIDE=/var/run/docker.sock
+
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ${HOME}/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
@@ -150,3 +153,11 @@ typeset -gU cdpath CPPFLAGS cppflags FPATH fpath infopath LDFLAGS ldflags MANPAT
 ### MANAGED BY RANCHER DESKTOP START (DO NOT EDIT)
 export PATH="${HOME}/.rd/bin:${PATH+:${PATH}}"
 ### MANAGED BY RANCHER DESKTOP END (DO NOT EDIT)
+export PATH="/opt/homebrew/opt/postgresql@16/bin:$PATH"
+
+# >>> talisman >>>
+# Below environment variables should not be modified unless you know what you are doing
+export TALISMAN_HOME=/opt/homebrew/Cellar/talisman/1.32.0
+alias talisman=$TALISMAN_HOME/talisman_darwin_amd64
+export TALISMAN_INTERACTIVE=true
+# <<< talisman <<<

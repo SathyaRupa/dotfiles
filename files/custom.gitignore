@@ -18,6 +18,7 @@ __pycache__
 .electron-gyp
 .env
 .erlang-hist*
+.expo/
 .hawtjni/
 .helm/**/*.tgz
 .idea*
@@ -96,6 +97,7 @@ __pycache__
 /.ctsystem
 /.cups/
 /.cvecheck/cvecheck-runtime.properties
+/.dlv/
 /.dmrc
 /.dropbox*
 /.dvdcss
@@ -160,6 +162,7 @@ __pycache__
 /.sbt/
 /.scalarDiagnostics/
 /.Skype
+/.sonar/
 /.sonarlint/
 /.ssh/known_hosts*
 /.sts4
@@ -206,7 +209,7 @@ __pycache__
 /dev/
 /Documents/
 /Downloads/
-/go/pkg/
+/go
 /Google\ Drive
 /Google\ Drive\ File\ Stream
 /Library/
@@ -215,7 +218,7 @@ __pycache__
 /Music/
 /OWASP-Dependency-Check/data
 /Parallels
-/personal/*/profiles/
+/*/*/profiles/
 /Pictures/
 /Public/
 /QuickStart
@@ -253,6 +256,8 @@ tmp/
 /.envrc
 /.erdconfig
 /.eslintrc.js
+/.fzf.bash
+/.fzf.zsh
 /.gemrc
 /.gitattributes
 /.gitconfig

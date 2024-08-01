@@ -1433,7 +1433,7 @@ fi
 # KeepassXC                                                                   #
 ###############################################################################
 if ask "KeepassXC settings" Y; then
-  defaults write org.keepassxc.keepassxc "NSNavLastRootDirectory" -string "${HOME}/personal/$(whoami)"
+  defaults write org.keepassxc.keepassxc "NSNavLastRootDirectory" -string "${HOME}/Personal/$(whoami)"
 fi
 
 ###############################################################################

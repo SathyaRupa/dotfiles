@@ -28,8 +28,8 @@ if non_zero_string "${KEYBASE_USERNAME}"; then
     mv "${HOME}/tmp/.git" "${HOME}/"
     rm -rf "${HOME}/tmp"
 
-    # Checkout files (these should not have any modifications/conflicts with what is in the remote repo)
-    git -C "${HOME}" checkout ".[a-zA-Z]*" personal
+  # Checkout files (these should not have any modifications/conflicts with what is in the remote repo)
+  git -C "${HOME}" checkout ".[a-zA-Z]*" Personal
 
     # Reset ssh keys' permissions so that git doesn't complain when using them
     sudo chmod -R 600 "${HOME}"/.ssh/* || true

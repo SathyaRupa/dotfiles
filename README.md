@@ -5,14 +5,14 @@ Most of the folder structures are governed by the following environment variable
 
 | Env var| Meaning | Default Value |
 | -------|---------|---------------|
-| `GH_USERNAME` | The github username | "vraravam" |
+| `GH_USERNAME` | The github username | "SathyaRupa" |
 | `UPSTREAM_GH_USERNAME` | Vijay's github username for setting upstream remote **Do NOT change** | "vraravam" |
 | `PROJECTS_BASE_DIR` | All codebases are cloned into a subfolder of this folder | "${HOME}/dev" |
 | `PERSONAL_CONFIGS_DIR` | Many configuration files (eg `.envrc`, `.tool-versions`) for specific repos are stored here and symlinked to their target destination | "${HOME}/personal/dev" |
 | `PERSONAL_PROFILES_DIR` | All browser profiles are captured in this folder | "${HOME}/personal/$(whoami)/profiles" |
 | `PERSONAL_BIN_DIR` | Scripts that are not shared as part of this repo are present here | "${HOME}/.bin" |
 | `DOTFILES_DIR` | This repo is cloned here | "${HOME}/.bin-oss" |
-| `KEYBASE_USERNAME` | Keybase username | "avijayr" |
+| `KEYBASE_USERNAME` | Keybase username | "sathyarupa" |
 | `KEYBASE_HOME_REPO_NAME` | Keybase home repo name | "home" |
 | `KEYBASE_PROFILES_REPO_NAME` | Keybase profiles repo name | "profiles" |
 
@@ -46,7 +46,7 @@ In your forked repo, make the following changes, commit and push (Once the above
 The meta script to setup the macos machine from a vanilla OS can be run using the following command:
 
 ```zsh
-export GH_USERNAME="vraravam"; export DOTFILES_DIR="${HOME}/.bin-oss"; curl -fsSL "https://raw.githubusercontent.com/${GH_USERNAME}/dotfiles/master/scripts/fresh-install-of-osx.sh" | zsh
+export GH_USERNAME="SathyaRupa"; export DOTFILES_DIR="${HOME}/.bin-oss"; curl -fsSL "https://raw.githubusercontent.com/${GH_USERNAME}/dotfiles/master/scripts/fresh-install-of-osx.sh" | zsh
 ```
 
 This script can be run in an idempotent manner, and will setup [oh-my-zsh](https://ohmyz.sh/), [homebrew](https://brew.sh), the dotfiles (this repo), etc.

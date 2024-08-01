@@ -257,6 +257,7 @@
   postBuffer = 786432000
 [init]
   defaultBranch = master
+	templatedir = y
 [interactive]
   diffFilter = diff-so-fancy --patch
 [maintenance]
@@ -307,3 +308,5 @@
   fsckobjects = false
 [user]
   useConfigOnly = true
+	name = Sathya Rupa.S
+	email = sathya.rupa@thoughtworks.com
